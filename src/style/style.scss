@@ -5,3 +5,110 @@
 .header {
     @include color-black;
 }
+// 3 sekcja 
+.history {
+    width: 100%;
+
+    &_container {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:"title title title phot1" 
+                            "descr descr phot2 phot3"
+                            " .    phot4 phot5 phot6"
+                            "phot7 phot8 after after";
+        
+        grid-row-gap: 20px;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+
+    &_title {
+        grid-area: title;
+        font-size: 11.4rem;
+        max-width: 500px;
+    }
+
+    &-description {
+        grid-area: descr;
+        margin: auto 0;
+        font-size: 2rem;
+        font-size: 1.7rem;
+    }
+
+    &-descriptions_item {
+        padding-bottom: 20px;
+        font-size: 1.7rem;
+        }
+
+    &_img1 {
+        grid-area: phot1;
+    }
+
+    &_img2 {
+        grid-area: phot2;
+    }
+
+    &_img3 {
+        grid-area: phot3;
+    }
+
+    &_img4 {
+        grid-area: phot4;
+    }
+
+    &_img5 {
+        grid-area: phot5;
+    }
+
+    &_img6 {
+        grid-area: phot6;
+    }
+
+    &_img7 {
+        grid-area: phot7;
+    }
+
+    &_img8 {
+        grid-area: phot8;
+    }
+
+    &_afterwords {
+        grid-area: after;
+        margin: auto;
+        font-size: 1.7rem;
+    }
+}
+// 4 sekcja 
+.trusted {
+    width: 100%;
+
+    &_container {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    &_title {
+        padding: 90px 0 0;
+        color: #E8244F;
+        font-size: 1.5rem;
+    }
+    &-firms { 
+        display: grid; 
+        grid-template-columns: repeat(5, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        }
+        &_card1 { grid-area: 1 / 1 / 2 / 2; } 
+        &_card2 { grid-area: 1 / 2 / 2 / 3; } 
+        &card_3 { grid-area: 1 / 3 / 2 / 4; } 
+        &card_4 { grid-area: 1 / 4 / 2 / 5; } 
+        &card_5 { grid-area: 1 / 5 / 2 / 6; } 
+        &card_6 { grid-area: 2 / 1 / 3 / 2; } 
+        &card_7 { grid-area: 2 / 2 / 3 / 3; } 
+        &card_8 { grid-area: 2 / 3 / 3 / 4; } 
+        &card_9 { grid-area: 2 / 4 / 3 / 5; } 
+        &card_10 { grid-area: 2 / 5 / 3 / 6; }
+    }
