@@ -1,0 +1,7 @@
+@mixin color-black {
+    background-color: black;
+    
+}
+.header {
+    @include color-black;
+}
