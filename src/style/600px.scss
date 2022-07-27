@@ -1,0 +1,681 @@
+@media (max-width: 600px) {
+@mixin color-black {
+    background-color: black;
+}
+
+// nawigacja
+body{
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%; 
+    border: 1px solid black
+}
+
+.header {
+    @include color-black;
+    width: 100%;
+    & img{
+        max-width: 100%;
+    }
+&_container {
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+     padding: 40px 0;
+     max-width: 600px;
+
+}
+
+&_logo {
+    width: 147px;
+    height: 20px;
+    padding: 5px 50px;
+}
+
+&_nav {
+    font-size: 12px;
+    padding: 10px 40px;
+    font-weight: 400; 
+    line-height: 12.4px;
+}
+
+
+&_item  {
+    color: white;
+    text-decoration: none; 
+    padding: 20px;
+}
+
+}
+
+// 1 sekcja 
+.home-page {
+    width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: 0;
+   
+    &_container {
+        margin: 0 auto;
+        max-width: 600px;
+        
+    }
+    
+    .home_cover-animation{
+        position: absolute;
+         z-index: -1;
+        left: 15%;
+        &_cover-animation img{
+            max-width: 100%;
+        }
+       
+
+        }
+
+   .home_title{
+    color: white;
+    
+
+    &_above{
+       text-align: center;
+        font-size: 11px;
+        font-weight: 400;
+        color: #999999;
+        cursor: pointer;
+       }
+   &-item1{
+    font-size: 74px;
+    font-weight: 400;
+  text-align: center;
+    line-height: 125px;
+    margin: 10px;
+    padding-right: 40px;
+    
+   }
+   &-item2{
+    font-size: 74px;
+    line-height: 125px;
+  text-align: center;
+    font-weight: 400;
+    margin: 10px;
+    padding-left: 40px;
+   }
+   
+}
+
+ .home_descriptions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 126px;
+    padding-bottom: 30px;
+   
+    &--1 p{
+        max-width: 510px;
+        color: #FFFFFF; 
+        font-size: 19px;
+        font-weight: 400;
+        padding-left: 40px;  
+    }
+    &--2{
+        max-width: 175px;
+        color: #FFFFFF;
+       padding-right: 50px;
+       cursor: pointer;
+        & p{
+            font-size: 19px;
+    font-weight: 400; 
+    
+        }
+        & h3 {
+            padding-bottom: 3px; 
+            font-size: 11px;
+            font-weight: 400;
+            color: grey;
+    }
+   }}}
+
+// 2 sekcja
+.support {
+    width: 100%;
+    & img{
+        max-width: 100%;
+    }
+    &_container {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    &_title {
+        padding: 90px 90px 0;
+        color: #E8244F;
+        font-size: 10px;
+    }
+.offers{
+    &-list {
+        padding: 60px 0;
+    }
+    & img{
+        max-width: 100%;
+    }
+    &-list-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 90px;
+    
+    }
+
+    &-list_item {
+        margin: auto 0;
+        
+        font-size: 16px;
+        line-height: 21.34px;
+    }
+
+    &-list_item1 {
+        font-size: 42px;
+        line-height: 55.3px;
+        max-width: 270px;
+    }
+
+    &-list_item2 {
+        text-align: left;
+        font-size: 16px;
+        max-width: 305px;
+    }
+
+     &-list_item3 {
+       margin: auto 0;
+       max-width: 43px;
+       cursor: pointer;
+     }
+}}
+
+
+
+
+
+
+// 3 sekcja 
+.history {
+    width: 100%;
+    & img{
+        max-width: 100%;
+    }
+    &_container {
+        display: grid;
+        margin-left: -12px;
+        
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:"title title title phot1" 
+                            "descr descr phot2 phot3"
+                            " .    phot4 phot5 phot6"
+                            "phot7 phot8 after after";
+        
+        gap: 10px;
+        max-width: 600px;
+        max-height: 930px;
+        margin: 0 auto;
+        
+        
+    }
+
+    &_title {
+        grid-area: title;
+        font-size: 65px;
+        max-width: 200px;
+       
+    }
+
+    &_description {
+        grid-area: descr;
+        margin: auto 0;
+        font-size: 2rem;
+        font-size: 17px;
+        
+    }
+
+    &-description_item {
+        padding-bottom: 20px;
+        max-width: 520px;
+        font-size: 17px;
+        
+
+        }
+&_img{
+    font-size: 11px;
+}
+    &_img1 {
+        grid-area: phot1;
+    }
+
+    &_img2 {
+        grid-area: phot2;
+    }
+
+    &_img3 {
+        grid-area: phot3;
+    }
+
+    &_img4 {
+        grid-area: phot4;
+    }
+
+    &_img5 {
+        grid-area: phot5;
+    }
+
+    &_img6 {
+        grid-area: phot6;
+    }
+
+    &_img7 {
+        grid-area: phot7;
+    }
+
+    &_img8 {
+        grid-area: phot8;
+    }
+
+    &_afterwords {
+        grid-area: after;
+        margin: auto;
+        font-size: 17px;
+        
+    }}
+// 4 sekcja 
+.trusted {
+    width: 100%;
+    & img{
+        max-width: 100%;
+    }
+    &_container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &_title {
+        color: #E8244F;
+        font-size: 10px;
+        padding-left: 40px;
+    }
+    &-firms { 
+        
+        display: grid; 
+        grid-template-columns: repeat(5, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        padding-bottom: 30px;
+        }
+        &_card1 { grid-area: 1 / 1 / 2 / 2; } 
+        &_card2 { grid-area: 1 / 2 / 2 / 3; } 
+        &card_3 { grid-area: 1 / 3 / 2 / 4; } 
+        &card_4 { grid-area: 1 / 4 / 2 / 5; } 
+        &card_5 { grid-area: 1 / 5 / 2 / 6; } 
+        &card_6 { grid-area: 2 / 1 / 3 / 2; } 
+        &card_7 { grid-area: 2 / 2 / 3 / 3; } 
+        &card_8 { grid-area: 2 / 3 / 3 / 4; } 
+        &card_9 { grid-area: 2 / 4 / 3 / 5; } 
+        &card_10 { grid-area: 2 / 5 / 3 / 6; }
+    }
+    // 5 sekcja
+    .agile {
+        overflow: hidden;
+        & img{
+            max-width: 100%;
+        }
+        &_container {
+            padding-top: 80px;
+            max-width: 600px;
+            background-color: black;
+        }
+    
+        &_wrap {
+            display: flex;
+            justify-content: flex-start;
+        
+            color: #FFFFFF;
+    
+            
+        }
+        &_nav{
+            padding-top: 45px;
+            padding-left: 20px;
+        }
+    &_nav li{
+        list-style: none;
+        
+    }
+    &_nav li:hover{
+        color:#E8244F ; 
+        cursor: pointer; 
+    }
+        &_item {
+            margin-right: 233.5px;
+
+        }
+    
+        &_item {
+            font-size: 14px;
+            line-height: 2;
+            
+        }
+    
+        &_info {
+            font-weight: 400;
+            max-width: 502px;
+            color: #FFFFFF;
+            
+            padding-right: 45px;
+        }
+    
+        &_title {
+            font-size: 37px;
+            line-height: 1.21;
+            margin-bottom: 49px;
+            max-width: 255px;
+        }
+    
+        &_desc {
+            font-size: 20px;
+            line-height: 1.3;
+            margin-bottom: 22px;
+            max-width: 250px;
+    
+        }
+    
+        &_link {
+            line-height: 1.31;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #fff;
+            cursor: pointer;
+            
+        }
+   
+        &_labels {
+            display: flex;
+            padding: 55px;
+           background-color: black;
+           color: #181818;
+           
+        }
+    
+        &_label {
+            font-size: 114px;
+            line-height: 1.3;
+            
+
+        }
+        &_label:hover {
+            color:#E8244F ;
+            cursor: pointer;
+        }
+    
+        &_label + &_label {
+            margin-left: 54px;
+        }
+    }
+    
+       
+      
+        
+    
+    // 6 sekcja
+    .inspiration {
+
+        width: 100%;
+        & img{
+            max-width: 100%;
+        }
+        &_container {
+            max-width: 600px;
+            max-height: 780px;
+            display: grid;
+            padding: 50px 20px 100px 20px;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "in_phot1 in_title"
+                                 "in_phot2 in_phot3 in_phot4"
+                                 "in_phot5 in_phot6 in_phot_7"
+                                 "in_phot8 in_after";
+           
+        }
+    
+        &_card {
+            margin: auto 0;
+            grid-area: in_title;
+        }
+    
+        &_title {
+            font-size: 30px;
+            margin: 50px 0 0  0;
+            font-weight: 400;
+        }
+    
+        &_description {
+            padding: 0px  30px 20px 0px;
+            font-size: 15px;
+          
+        }
+    
+        &_photo1 {
+            grid-area: in_phot1;
+        }
+    
+        &_photo2{
+            grid-area: in_phot2;
+        }
+    
+        &_photo3{
+            grid-area: in_phot3;
+        }
+    
+        &_photo4 {
+            grid-area: in_phot4;
+        }
+    
+        &_photo5 {
+            grid-area: in_phot5;
+        }
+    
+        &_photo6 {
+            grid-area: in_phot6;
+        }
+    
+        &_photo7 {
+            grid-area: in_phot7;
+        }
+        &_about{
+           font-size: 10px; 
+           color: grey}
+        &-b_title{
+          font-size: 12px;
+          color: #000000;
+          font-weight: 400;
+        }
+        &_afterwords {
+            margin: auto 0;
+            padding-right: 140px;
+            grid-area: in_after;
+            font-size: 20px;
+        }
+    }
+    // 7 sekcja
+    .movingtext{
+    width: 100%;
+    & img{
+        max-width: 100%;
+    }
+    &_container {
+        margin: 0 auto;
+        max-width:600px;
+        overflow: hidden;
+        font-size: 114px;
+    }
+
+    &_string1, 
+    &_string2,
+    &_string3 {
+      white-space: nowrap;
+        color: #888888;
+    }
+
+    &_blackstring {
+        color: #000;
+    }
+    }
+    // 8 sekcja
+    .help {
+
+        width: 100%;
+        & img{
+            max-width: 100%;
+        }
+        &_container{
+            display: flex;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 25px;
+        }
+    
+        &_card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0 18px;
+        }
+        &_card_title {
+            max-width: 520px;
+            font-size: 46px;
+            font-weight: 400;
+        }
+    
+        &_card_description {
+            max-width: 4200px;
+            font-size: 20px;
+
+        }
+    
+        &_card_signatures {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 480px;
+        }
+        
+    }
+    // 9 sekcja
+    .contacts {
+
+        width: 100%;
+        background-color: black;
+        & img{
+            max-width: 100%;
+        }
+        &_container {
+            
+            margin: 0 auto;
+            max-width: 600px;
+            color: white;
+        }
+    
+        &_title {
+            padding: 100px 0 40px;
+            font-size: 15px;
+            font-weight: 400;
+            color: grey;
+            margin-left: 85px;
+        }
+    
+        &_links {
+            padding: 50px 0;
+            max-width: 500px;
+            font-size: 40px;
+            
+            
+          
+        }
+        &_links a{
+        color: white;
+        text-decoration: none;}
+    
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 100px 0;
+        }
+    
+        &_wrapper_adress {
+            display: inline-block;
+            max-width: 400px;
+            font-size: 20px;
+            font-weight: 400;
+        
+        }
+    
+        &_wrapper_media {
+            display: inline-block;
+            padding-right: 35px;
+        }
+    
+        &_wrapper_media_item {
+            padding: 20px 20px;
+            cursor: pointer;
+        }
+    
+        &_footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 0;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 15px; 
+            font-weight: 400; 
+            gap: 170px; 
+            
+        }
+    
+        &_footer_item {
+            display: flex;
+            justify-content: space-between;
+            
+            
+        }
+        &_footer_item:nth-child(1){
+            max-width: 195px;
+        
+        }
+        &_footer_item:nth-child(2){
+            max-width: 130px;
+        }
+        &_footer_item:nth-child(3){
+            max-width: 100px;
+        }
+    
+    
+    }
+    
+    // 10 sekcja
+    .footer {
+        max-width: 100%;
+        & img{
+            max-width: 100%;
+        }
+        &_container {
+            margin: 0 auto;
+            padding: 40px 0;
+            max-width: 600px;
+            color: black;
+            text-align: center;
+
+        }
+        & a{
+            text-decoration: none;
+        }
+        &_to_top {
+            font-size: 46px;
+            font-weight: 400;
+        }
+    }}
