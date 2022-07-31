@@ -1,0 +1,75 @@
+.home_cover_first_img {
+    animation: 15s linear infinite;
+        animation-name: rotate;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.home_cover_second_img { 
+ animation: 15s linear infinite;
+animation-name: rotate;
+}
+@keyframes rotate {
+100%{
+transform: rotate(0deg);
+}
+0%{
+transform: rotate(360deg);
+}
+}
+
+
+
+
+.movingtext{
+
+        &_string1 {
+            
+            animation: 20s linear infinite;
+            animation-name: _string1;
+        }
+    
+        &_string2 {
+            
+            animation: 20s linear infinite;
+            animation-name: _string2;
+        }
+    
+        &_string3 {
+            
+            animation: 20s linear infinite;
+            animation-name: _string3;
+        }
+    }
+
+
+@keyframes _string1 {
+    0%{
+        transform: translate(110%);
+    }
+    100%{
+        transform: translate(-200%);
+    }
+}
+
+@keyframes _string2 {
+    0%{
+        transform: translate(-250%);
+    }
+    100%{
+        transform: translate(100%);
+    }
+}
+
+@keyframes _string3 {
+    0%{
+        transform: translate(110%);
+    }
+    100%{
+        transform: translate(-270%);
+    }}
