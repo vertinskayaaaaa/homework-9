@@ -5,9 +5,9 @@
 // nawigacja
 body{
     margin: 0 auto;
-    max-width: 1024px;
+    
     width: 100%; 
-    border: 1px solid black
+   
 }
 
 .header {
@@ -70,19 +70,13 @@ body{
     color: white;
     position: relative;
 
-    &_above{
-        padding-left: 250px;
-        font-size: 11px;
-        font-weight: 400;
-        color: #999999;
-        cursor: pointer;
-       }
+   
    &-item1{
     font-size: 114px;
     font-weight: 400;
    text-align: center;
     line-height: 125px;
-    margin: 10px;
+    
     padding-right: 70px;
     
    }
@@ -337,6 +331,7 @@ body{
             padding-top: 45px;
             padding-left: 20px;
             max-width: 230px;
+            margin-left: 20px;
         }
     &_nav li{
         list-style: none;
@@ -362,6 +357,7 @@ body{
             max-width: 502px;
             color: #FFFFFF;
             padding-left: 45px;
+            margin-left: 60px;
         }
     
         &_title {
@@ -424,13 +420,13 @@ body{
             max-width: 1024px;
             display: grid;
             padding: 100px 20px 100px 20px;
-          
+          margin: 0 auto;
             grid-template-rows: repeat(3, 1fr);
             grid-template-columns: repeat(4, 1fr);
             grid-template-areas: "in_phot1 in_title in_title in_title"
                                  "in_phot2 in_phot3 in_phot4 in_phot5"
                                  "in_after in_after in_phot6 in_phot7";
-            grid-row-gap: 40px;
+            gap: 20px;
         }
     
         &_card {

@@ -5,9 +5,9 @@
 // nawigacja
 body{
     margin: 0 auto;
-    max-width: 768px;
+    // 
     width: 100%; 
-    border: 1px solid black
+    
 }
 
 .header {
@@ -48,6 +48,7 @@ body{
 }
 
 // 1 sekcja 
+
 .home-page {
     width: 100%;
     background-color: black;
@@ -79,7 +80,7 @@ body{
     font-weight: 400;
     text-align: center;
     line-height: 125px;
-    margin: 10px;
+  
     padding-right: 45px;
    }
    &-item2{
@@ -356,6 +357,7 @@ body{
             font-weight: 400;
             max-width: 502px;
             color: #FFFFFF;
+            padding-left: 20px;
           
         }
     
@@ -420,6 +422,7 @@ body{
         &_container {
             max-width: 768px;
             max-height: 850px;
+            margin: 0 auto;
             display: grid;
             padding: 50px 20px 100px 20px;
             grid-template-rows: repeat(4, 1fr);

@@ -6,9 +6,9 @@
     // nawigacja
     body{
         margin: 0 auto;
-        max-width: 900px;
+       
         width: 100%; 
-        border: 1px solid black
+        
     }
     
     .header {
@@ -80,7 +80,7 @@
         font-weight: 400;
         text-align: center;
         line-height: 125px;
-        margin: 10px;
+        
         padding-right: 50px;
         
        }
@@ -335,6 +335,7 @@
             &_nav{
                 padding-top: 45px;
                max-width: 180px;
+               margin-left: 20px;
             }
         &_nav li{
             list-style: none;
@@ -419,6 +420,7 @@
                 max-width: 100%;
             }
             &_container {
+                margin: 0 auto;
                 max-width: 900px;
                max-height: 1050px;
                 display: grid;
@@ -428,7 +430,7 @@
                                  "in_phot2 in_phot3 in_phot4 "
                                  "in_phot5 in_phot6 in_phot7"
                                  "in_after in_after .";
-                grid-gap: 30px;
+                gap: 30px;
             }
         
             &_card {
